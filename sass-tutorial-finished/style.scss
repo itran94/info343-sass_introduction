@@ -1,0 +1,42 @@
+$darkShade: #083030;
+$lightShade: #155454;
+$radius: 10px;
+
+@import '_mixin';
+
+body {
+	background: $lightShade;
+	font-family: sans-serif;
+	color: white;
+}
+
+header {
+	background: $darkShade;
+	font-family: helvetica, sans-serif;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+h1 {
+	color: #460C22;
+	font-style: italic;
+}
+
+.container {
+	background: $darkShade;
+	@include border-radius(10px);
+
+	.description {
+		a {
+			text-decoration: underline;
+			
+			&:hover {
+				color: $lightShade;
+			}
+		}
+
+	}
+}
