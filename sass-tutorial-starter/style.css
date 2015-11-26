@@ -1,0 +1,30 @@
+body {
+  background: #155454;
+  font-family: sans-serif;
+  color: white; }
+
+header {
+  background: #083030;
+  font-family: helvetica, sans-serif; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+h1 {
+  color: #460C22;
+  font-style: italic; }
+
+.container {
+  background: #083030;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5px; }
+  .container .description a {
+    text-decoration: underline; }
+    .container .description a:hover {
+      color: #155454; }
+
+/*# sourceMappingURL=style.css.map */

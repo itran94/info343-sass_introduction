@@ -1,11 +1,17 @@
+$darkTeal: #083030;
+$lightTeal: #155454;
+$radius: 10px;
+
+@import '_mixin';
+
 body {
-	background: #155454;
+	background: $lightTeal;
 	font-family: sans-serif;
 	color: white;
 }
 
 header {
-	background: #083030;
+	background: $darkTeal;
 	font-family: helvetica, sans-serif;
 }
 
@@ -20,5 +26,15 @@ h1 {
 }
 
 .container {
-	color: #083030;
+	background: $darkTeal;
+	@include border-radius(10px);
+
+	.description {
+		a {
+			text-decoration: underline;
+			&:hover {
+				color: $lightTeal;
+			}
+		}
+	}
 }
